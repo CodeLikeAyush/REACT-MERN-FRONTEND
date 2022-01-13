@@ -28,6 +28,7 @@ function Singin() {
             body: JSON.stringify(inputVal),
         };
         try {
+            console.log(process.env.api_url);
             const fetchResponse = await fetch(`${process.env.api_url}/signin`, options);
             // const fetchResponse = await fetch('http://localhost:4000/signin', options);
             const data = await fetchResponse.json();
