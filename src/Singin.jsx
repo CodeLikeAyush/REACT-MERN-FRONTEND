@@ -28,7 +28,7 @@ function Singin() {
             body: JSON.stringify(inputVal),
         };
         try {
-            const fetchResponse = await fetch('https://mernbackendtest.herokuapp.com/signin', options);
+            const fetchResponse = await fetch(`${process.env.API_URL}/signin`, options);
             // const fetchResponse = await fetch('http://localhost:4000/signin', options);
             const data = await fetchResponse.json();
             console.log(data);
