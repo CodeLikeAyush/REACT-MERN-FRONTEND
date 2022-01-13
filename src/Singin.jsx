@@ -29,7 +29,7 @@ function Singin() {
         };
         try {
             console.log(process.env.api_url);
-            const fetchResponse = await fetch(`https://mernbackendtest.herokuapp.com/signin`, options);
+            const fetchResponse = await fetch("https://mernbackendtest.herokuapp.com/signin", options);
             // const fetchResponse = await fetch('http://localhost:4000/signin', options);
             const data = await fetchResponse.json();
             console.log(data);
