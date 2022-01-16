@@ -39,7 +39,7 @@ function Profile() {
         try {
 
 
-            const fetchResponse = await fetch(`${process.env.api_url}/profile/refreshprofile`, options);
+            const fetchResponse = await fetch(`https://mernbackendtest.herokuapp.com/profile/refreshprofile`, options);
             // const fetchResponse = await fetch('http://localhost:4000/profile/refreshprofile', options);
             const data = await fetchResponse.json();
 
@@ -66,7 +66,7 @@ function Profile() {
             // body: JSON.stringify(inputVal),
         };
 
-        const res = await fetch(`${process.env.api_url}/profile/logout`, options);
+        const res = await fetch(`https://mernbackendtest.herokuapp.com/profile/logout`, options);
         // const res = await fetch(process.env.API_URL / profile / logout, options);
         console.log(res);
 
