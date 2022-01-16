@@ -34,7 +34,7 @@ function Contact() {
         };
 
         try {
-            const fetchResponse = await fetch(`${process.env.api_url}/registration`, options);
+            const fetchResponse = await fetch(`https://mernbackendtest.herokuapp.com/registration`, options);
             // const fetchResponse = await fetch(process.env.API_URL/registration, options);
 
             const data = await fetchResponse.json();
